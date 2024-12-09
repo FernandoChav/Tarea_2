@@ -1,0 +1,28 @@
+/* Animación para el fondo de la barra de navegación */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+/* Fondo de gradiente espacial */
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, #101e35, #27043b, #1a1545, #361c40);
+}
+
+
+html {
+    scroll-behavior: smooth;
+    
+}

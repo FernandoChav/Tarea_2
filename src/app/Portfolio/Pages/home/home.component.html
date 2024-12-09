@@ -1,1 +1,134 @@
-<p>home works!</p>
+<div class="items-center">
+    <!-- Barra de navegación con fondo translúcido y metálico -->
+    <nav class="bg-gray-900 bg-opacity-70 fixed w-full z-20 top-0 left-0 shadow-lg">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 rounded-lg">
+                    <li>
+                        <a href="#proyectos" class="block py-2 px-4 text-white rounded hover:bg-gray-700 hover:text-indigo-300 transition duration-300" >Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#habilidades" class="block py-2 px-4 text-gray-300 rounded hover:bg-gray-700 hover:text-indigo-300 transition duration-300">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#sobre-mi" class="block py-2 px-4 text-gray-300 rounded hover:bg-gray-700 hover:text-indigo-300 transition duration-300">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#Contacto" class="block py-2 px-4 text-gray-300 rounded hover:bg-gray-700 hover:text-indigo-300 transition duration-300">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex justify-center pt-24 min-h-screen">
+        <app-card></app-card>
+    </div>
+
+    
+    <section class="relative w-full bg-gray-100 dark:bg-gray-900 py-12" id="proyectos">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-center text-gray-800 dark:text-white mb-8">Proyectos Destacados</h2>
+            <ol class="relative border-s border-gray-300 dark:border-gray-700 space-y-8">
+                <!-- Primera experiencia -->
+                <li class="flex flex-col items-start">
+                    <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-6 border border-white dark:border-gray-900"></div>
+                    <time class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Noviembre 2023</time>
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-1">
+                        <a href="https://github.com/FernandoChav/API-REST" class="hover:underline text-indigo-600 dark:text-indigo-400">
+                            Desarrollo de API REST con .NET 8
+                        </a>
+                    </h3>
+                    <p class="text-base text-gray-700 dark:text-gray-300 mb-4">
+                        Diseñé y desarrollé una API REST con autenticación JWT y manejo avanzado de repositorios, consumida por una aplicación web en Angular.
+                    </p>
+                </li>
+                <!-- Segunda experiencia -->
+                <li class="flex flex-col items-start">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-6 border border-white dark:border-gray-900"></div>
+                    <time class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Octubre 2023</time>
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-1">
+                        <a href="https://github.com/FernandoChav/Cervezas-Precios" class="hover:underline text-blue-600 dark:text-blue-400">
+                            Análisis de Precios de Cervezas
+                        </a>
+                    </h3>
+                    <p class="text-base text-gray-700 dark:text-gray-300 mb-4">
+                        Proyecto de procesamiento de datos para estudiar variaciones de precios en supermercados chilenos. Implementación de un modelo relacional en MySQL.
+                    </p>
+                </li>
+                <!-- Tercera experiencia -->
+                <li class="flex flex-col items-start">
+                    <div class="absolute w-4 h-4 bg-green-500 rounded-full -left-6 border border-white dark:border-gray-900"></div>
+                    <time class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Julio 2023</time>
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-1">
+                        <a href="https://github.com/FernandoChav/EduPython" class="hover:underline text-green-600 dark:text-green-400">
+                            Desarrollo de Aplicacione Web
+                        </a>
+                    </h3>
+                    <p class="text-base text-gray-700 dark:text-gray-300">
+                        Creación y desarrollo de una API REST con .net8 para un gimnasio y una aplicación web en Angular para la gestión de clientes y servicios.
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section id="habilidades" class="py-16 bg-gray-800 text-white">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <!-- Título de la sección -->
+            <h2 class="text-3xl font-semibold text-center mb-12">Habilidades</h2>
+            
+            <!-- Contenedor de las habilidades -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Habilidades Técnicas -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Habilidades Técnicas</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Lenguajes de programación: JavaScript, Python, C#, TypeScript</li>
+                        <li>Frameworks: Angular, React, .NET, Nest</li>
+                        <li>Herramientas: Git, Docker</li>
+                        <li>Base de datos: MySQL, PostgreSQL, Sqlite, MongoDB</li>
+                        <li>Otras tecnologías: Tailwind CSS, AWS, Firebase</li>
+                    </ul>
+                </div>
+                
+                <!-- Habilidades Blandas -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Habilidades Blandas</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Comunicación efectiva</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolución de problemas</li>
+                        <li>Adaptabilidad y aprendizaje continuo</li>
+                        <li>Gestión del tiempo</li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+        <!-- Sección sobre mí -->
+    <section id="sobre-mi" class="bg-gradient-to-r from-blue-600 via-indigo-800 to-purple-900 text-white py-16 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6 text-left">Sobre Mí</h2>
+            <p class="text-lg mb-4 leading-relaxed text-left">
+                Soy Fernando Chávez, un estudiante apasionado por la tecnología y la informática. Actualmente estudio
+                Ingeniería Civil en Computación e Informática en la Universidad Católica del Norte, y me encuentro en camino
+                a convertirme en desarrollador web full stack. Mi motivación en el campo de la informática proviene del deseo
+                de crear soluciones innovadoras que mejoren la vida de las personas. Me encanta enfrentar desafíos técnicos y
+                aprender nuevas herramientas y lenguajes de programación que me permitan resolver problemas de manera eficiente.
+            </p>
+            <p class="text-lg mb-6 leading-relaxed text-left">
+                Fuera de la programación, disfruto de entrenar calistenia, la música y la exploración de nuevas tecnologías que impactan
+                la sociedad. Creo firmemente que el trabajo en equipo y la comunicación son claves para el éxito en cualquier
+                proyecto, y siempre estoy buscando aprender de los demás y compartir mis conocimientos.
+            </p>
+        </div>
+    </section>
+
+    <app-form id="Contacto"></app-form>
+    
+
+</div>
+
+

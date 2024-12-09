@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: linear-gradient(135deg, #0c0e41, #1a1a1a);
+    /* El degradado da un efecto de profundidad metálica */
+    min-height: 100vh;
+    margin: 0;
+    color: white; /* Asegura que el texto sea visible */
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo prefieres *//* Opcional: hace que el texto sea blanco para mayor contraste */
+}
+
+
+html {
+    scroll-behavior: smooth;
+    
+}
+section {
+    scroll-margin-top: 4rem; /* Ajusta este valor según la altura de tu barra de navegación */
+}

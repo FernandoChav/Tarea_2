@@ -1,0 +1,59 @@
+.animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+/* Estilos específicos de LinkedIn y GitHub */
+.linkedin {
+    background-color: #0077b5; /* Azul LinkedIn */
+}
+.linkedin:hover {
+    color: #0077b5;
+    background-color: white;
+}
+
+.github {
+    background-color: #333; /* Negro GitHub */
+}
+.github:hover {
+    color: #333;
+    background-color: white;
+}
+
+/* Bordes animados */
+.animated-button::before,
+.animated-button::after {
+    content: "";
+    position: absolute;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all 0.4s ease;
+}
+
+.animated-button::before {
+    top: 0;
+    left: 0;
+    border-top-color: currentColor;
+    border-left-color: currentColor;
+}
+
+.animated-button::after {
+    bottom: 0;
+    right: 0;
+    border-bottom-color: currentColor;
+    border-right-color: currentColor;
+}
+
+.animated-button:hover::before,
+.animated-button:hover::after {
+    width: 100%;
+    height: 100%;
+}
